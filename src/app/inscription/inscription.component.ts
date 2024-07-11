@@ -25,8 +25,7 @@ export class InscriptionComponent {
   }
 
   getCurrentDate(): string {
-
-    return ""
+    return new Date().toISOString().split('T')[0];
   }
 
   inscrire() {
