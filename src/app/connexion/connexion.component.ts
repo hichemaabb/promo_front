@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './connexion.component.html',
-  styleUrl: './connexion.component.scss'
+  styleUrls: ['./connexion.component.scss']
 })
 export class ConnexionComponent {
 

@@ -9,7 +9,7 @@ import {InscriptionService} from "./inscription.service";
     FormsModule
   ],
   templateUrl: './inscription.component.html',
-  styleUrl: './inscription.component.scss'
+  styleUrls: ['./inscription.component.scss']
 })
 export class InscriptionComponent {
 
