@@ -14,6 +14,8 @@ export class InscriptionService {
   inscriptionUtilisateur(utilisateurRequest: UtilisateurRequest) {
     let url = `${this.env}utilisateurs`
 
-    return this.http.post<UtilisateurRequest>(url, utilisateurRequest)
+    return this.http.post<UtilisateurRequest>(url, utilisateurRequest).subscribe((resolve) => {
+      console.log(resolve)
+    })
   }
 }

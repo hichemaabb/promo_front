@@ -38,8 +38,6 @@ export class InscriptionComponent {
       email: this.email,
       date_naissance: this.date_naissance,
       date_creation:  this.getCurrentDate(),
-    }).subscribe((value: any) => {
-      console.log(value)
     })
   }
 
