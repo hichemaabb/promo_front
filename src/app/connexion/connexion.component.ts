@@ -23,8 +23,9 @@ export class ConnexionComponent {
     this.connexionService.connexionUtilisateur({
       email: this.email,
       mdp: this.mdp
-    }).subscribe((accessToken) => {
-      console.log(accessToken)
+    }).subscribe((connexionResponse) => {
+      console.log(connexionResponse)
+      localStorage.setItem("access_token", connexionResponse.access_token)
     })
   }
 }
