@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center">Inscription</h2>
+      <form (ngSubmit)="inscrire()">
+        <div class="mb-3">
+          <label for="nom" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="nom" placeholder="Nom d'utilisateur" name="nom" [(ngModel)]="nom">
+        </div>
+        <div class="mb-3">
+          <label for="prenom" class="form-label">Prénom</label>
+          <input type="text" class="form-control" id="prenom" placeholder="Prénom d'utilisateur" name="prenom" [(ngModel)]="prenom">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Adresse Email</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" [(ngModel)]="email">
+        </div>
+        <div class="mb-3">
+          <label for="tel" class="form-label">Téléphone</label>
+          <input type="text" class="form-control" id="tel" placeholder="Téléphone" max="10" name="tel" [(ngModel)]="tel">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Date de naissance</label>
+          <input type="date" class="form-control" id="date_naissance" placeholder="Nom d'utilisateur" name="date_naissance" [(ngModel)]="date_naissance">
+        </div>
+        <div class="mb-3">
+          <label for="tel" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="password" placeholder="Téléphone" max="10" name="password" [(ngModel)]="password">
+        </div>
+        <div class="mb-3">
+          <label for="confirm_pass" class="form-label">Confirmer le mot de passe</label>
+          <input type="password" class="form-control" id="confirm_pass" placeholder="Nom d'utilisateur" name="confirm_pass" [(ngModel)]="confirm_pass">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+      </form>
+    </div>
+  </div>
+</div>
