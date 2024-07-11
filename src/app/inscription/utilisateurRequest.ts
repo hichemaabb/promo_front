@@ -1,10 +1,10 @@
 export interface UtilisateurRequest {
-  nom: string;
-  prenom: string;
+  Nom: string;
+  Prenom: string;
+  Tel: string;
   email: string;
-  tel: string;
-  date_naissance: string;
-  date_creation: string;
+  DateNaissance: string;
+  DateCreation: string;
   mdp: string;
   id?: number;
 }

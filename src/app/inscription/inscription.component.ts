@@ -31,13 +31,13 @@ export class InscriptionComponent {
 
   inscrire() {
     this.inscriptionService.inscriptionUtilisateur({
-      nom: this.nom,
-      prenom: this.prenom,
-      tel: this.tel,
+      Nom: this.nom,
+      Prenom: this.prenom,
+      Tel: this.tel,
       mdp: this.password,
       email: this.email,
-      date_naissance: this.date_naissance,
-      date_creation:  this.getCurrentDate(),
+      DateNaissance: this.date_naissance,
+      DateCreation:  this.getCurrentDate(),
     }).subscribe((value) => {
       console.log(value)
     })
